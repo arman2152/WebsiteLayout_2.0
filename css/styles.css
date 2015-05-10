@@ -65,6 +65,9 @@ body {
   width: 70%;
   margin: 0 auto;
   text-align: center; }
+  @media screen and (max-width: 770px) {
+    .container {
+      width: 100%; } }
 
 a {
   text-decoration: none; }
@@ -77,11 +80,24 @@ a {
   color: white;
   font-family: Main Font;
   padding: 100px 0; }
+  @media screen and (max-width: 400px) {
+    .dark-blue-section {
+      padding: 50px 0; } }
 
 .text-container {
   width: 26em;
   text-align: center;
   margin: 0 auto; }
+  @media screen and (max-width: 770px) {
+    .text-container {
+      width: 18em;
+      margin: 0 auto;
+      text-align: center; } }
+  @media screen and (max-width: 400px) {
+    .text-container {
+      width: 14em;
+      font-size: 0.65em;
+      line-height: 1.5em; } }
 
 .section-title {
   text-transform: uppercase;
@@ -135,17 +151,27 @@ header {
     text-align: center;
     width: 19em;
     font-family: Main Font; }
+    @media screen and (max-width: 770px) {
+      header .header-container {
+        width: 20em; } }
     header .header-container h1 {
       font-size: 4em;
       padding-bottom: 20px;
       color: #042B34; }
+      @media screen and (max-width: 400px) {
+        header .header-container h1 {
+          font-size: 3em; } }
     header .header-container p {
       font-size: 1.5em;
       padding-bottom: 20px;
       color: rgba(0, 0, 0, 0.4);
       line-height: 1.5em; }
+      @media screen and (max-width: 400px) {
+        header .header-container p {
+          font-size: 1.3em;
+          line-height: 1.3em; } }
     header .header-container a {
-      display: block;
+      font-family: Main Font Bold;
       color: #66CCCC; }
 
 .services {
@@ -156,9 +182,6 @@ header {
   padding-top: 8.3645%;
   font-family: Main Font;
   color: white; }
-  @media screen and (max-width: 400px) {
-    .services {
-      height: 100%; } }
   @media screen and (max-width: 770px) {
     .services {
       height: auto;
@@ -183,7 +206,8 @@ header {
     background: #66CCCC; }
     @media screen and (max-width: 400px) {
       .services #picture {
-        height: 30%;
+        height: 20%;
+        width: 90%;
         margin-top: 10%; } }
     @media screen and (max-width: 770px) {
       .services #picture {
@@ -197,12 +221,12 @@ header {
     @media screen and (max-width: 400px) {
       .services ul {
         margin-top: 10%;
-        margin-bottom: 30px; } }
+        margin-bottom: 30px;
+        font-size: 0.5em; } }
     @media screen and (max-width: 770px) {
       .services ul {
-        padding-bottom: 50px; } }
+        padding-top: 50px; } }
     .services ul li {
-      display: inline-block;
       list-style: none;
       margin-left: 8px;
       margin-right: 8px;
@@ -211,12 +235,12 @@ header {
       @media screen and (max-width: 400px) {
         .services ul li {
           display: block;
-          line-height: 35px; } }
+          padding-bottom: 0.6em; } }
       @media screen and (max-width: 770px) {
         .services ul li {
           display: block;
-          line-height: 45px;
-          font-size: 1.6em;
+          line-height: 2em;
+          font-size: 1.8em;
           letter-spacing: 0.05em; } }
       .services ul li:first-child {
         margin-left: 0; }
@@ -226,29 +250,60 @@ header {
   border-left: 5px solid rgba(0, 0, 0, 0.1);
   margin: 100px auto;
   font-family: Main Font; }
+  @media screen and (max-width: 770px) {
+    .projects-detailed .section-container {
+      width: 85%; } }
+  @media screen and (max-width: 400px) {
+    .projects-detailed .section-container {
+      border: none; } }
   .projects-detailed .section-container .project-hidden {
     display: none; }
   .projects-detailed .section-container .project-container {
     width: 100%;
     padding-bottom: 5%; }
+    @media screen and (max-width: 400px) {
+      .projects-detailed .section-container .project-container {
+        padding-bottom: 25%; } }
     .projects-detailed .section-container .project-container .picture {
       float: left;
       width: 20%;
       text-align: center; }
+      @media screen and (max-width: 770px) {
+        .projects-detailed .section-container .project-container .picture {
+          width: 35%; } }
+      @media screen and (max-width: 400px) {
+        .projects-detailed .section-container .project-container .picture {
+          clear: both;
+          width: 100%;
+          text-align: left;
+          padding-bottom: 15px; } }
     .projects-detailed .section-container .project-container .project-info {
       float: right;
       width: 75%; }
+      @media screen and (max-width: 770px) {
+        .projects-detailed .section-container .project-container .project-info {
+          width: 65%; } }
+      @media screen and (max-width: 400px) {
+        .projects-detailed .section-container .project-container .project-info {
+          clear: both;
+          width: 100%; } }
       .projects-detailed .section-container .project-container .project-info .project-name {
         font-size: 1.5em;
         letter-spacing: 0.02em;
         color: #042B34;
         padding-bottom: 1em;
         font-family: Main Font Bold; }
+        @media screen and (max-width: 770px) {
+          .projects-detailed .section-container .project-container .project-info .project-name {
+            line-height: 1.5em; } }
       .projects-detailed .section-container .project-container .project-info .client-name {
         font-size: 1.5em;
         color: rgba(0, 0, 0, 0.4);
         padding-bottom: 1em;
         font-family: Main Font Bold; }
+        @media screen and (max-width: 770px) {
+          .projects-detailed .section-container .project-container .project-info .client-name {
+            line-height: 1.5em; } }
       .projects-detailed .section-container .project-container .project-info .project-description {
         float: left;
         width: 60%;
@@ -256,6 +311,9 @@ header {
         color: rgba(0, 0, 0, 0.4);
         padding-bottom: 1em;
         padding-right: 5%; }
+        @media screen and (max-width: 770px) {
+          .projects-detailed .section-container .project-container .project-info .project-description {
+            width: 100%; } }
         .projects-detailed .section-container .project-container .project-info .project-description .read-more {
           display: none; }
       .projects-detailed .section-container .project-container .project-info .project-services {
@@ -263,6 +321,9 @@ header {
         width: 33%;
         line-height: 2em;
         color: rgba(0, 0, 0, 0.4); }
+        @media screen and (max-width: 770px) {
+          .projects-detailed .section-container .project-container .project-info .project-services {
+            display: none; } }
         .projects-detailed .section-container .project-container .project-info .project-services h5 {
           color: #66CCCC;
           font-size: 0.7em;
@@ -272,24 +333,40 @@ header {
     .projects-detailed .section-container .project-container .link {
       clear: both;
       padding-left: 25%; }
+      @media screen and (max-width: 770px) {
+        .projects-detailed .section-container .project-container .link {
+          padding-left: 40%; } }
+      @media screen and (max-width: 400px) {
+        .projects-detailed .section-container .project-container .link {
+          padding: 0; } }
       .projects-detailed .section-container .project-container .link a {
         color: #66CCCC;
         padding-right: 3em; }
 .projects-detailed .see-more {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  display: block;
+  margin: 40px auto;
+  width: 18%;
   color: #66CCCC;
   font-family: Main Font Bold;
   border: 2px solid #66CCCC;
   border-radius: 2px;
-  padding: 10px 50px;
+  padding: 20px 10px;
   text-align: center; }
+  @media screen and (max-width: 770px) {
+    .projects-detailed .see-more {
+      padding: 20px 30px; } }
+  @media screen and (max-width: 400px) {
+    .projects-detailed .see-more {
+      width: 30%;
+      padding: 15px 30px; } }
 
 .clients {
   background: #FCF8F3; }
   .clients .container {
     padding: 100px; }
+    @media screen and (max-width: 770px) {
+      .clients .container {
+        padding: 100px 0; } }
     .clients .container h3 {
       font-family: Main Font Bold;
       text-transform: uppercase;
@@ -300,6 +377,9 @@ header {
       width: 90%;
       margin: 0 auto;
       padding-top: 30px; }
+      @media screen and (max-width: 770px) {
+        .clients .container .wrapper {
+          width: 50%; } }
       .clients .container .wrapper img {
         padding: 20px; }
 
@@ -313,21 +393,49 @@ header {
     width: 80%;
     margin: 0 auto;
     padding: 5% 0; }
+    @media screen and (max-width: 770px) {
+      .values-detailed .wrap {
+        width: 90%;
+        padding-top: 6em; } }
+    @media screen and (max-width: 400px) {
+      .values-detailed .wrap {
+        width: 90%;
+        margin: 0 auto; } }
     .values-detailed .wrap .item {
       width: 17.58%;
       display: inline-block;
       text-align: center;
       margin: 0 75px; }
+      @media screen and (max-width: 770px) {
+        .values-detailed .wrap .item {
+          width: 26em;
+          margin: 0 auto;
+          padding-bottom: 3em; } }
+      @media screen and (max-width: 400px) {
+        .values-detailed .wrap .item {
+          width: 80%;
+          margin: 0 auto; } }
       .values-detailed .wrap .item:last-child p {
         width: 75%;
         margin: 0 auto; }
+        @media screen and (max-width: 770px) {
+          .values-detailed .wrap .item:last-child p {
+            width: 26em; } }
       .values-detailed .wrap .item .pic {
         border: 1px solid white;
         width: 100%;
         height: 170px;
         margin-bottom: 25px; }
+        @media screen and (max-width: 770px) {
+          .values-detailed .wrap .item .pic {
+            width: 50%;
+            margin: 0 auto; } }
       .values-detailed .wrap .item h3 {
         margin-bottom: 25px; }
+        @media screen and (max-width: 770px) {
+          .values-detailed .wrap .item h3 {
+            font-size: 1.5em;
+            padding-top: 20px; } }
       .values-detailed .wrap .item p {
         line-height: 1.5em;
         letter-spacing: 0.025em; }
@@ -339,6 +447,15 @@ header {
     width: 75%;
     margin: 8% auto;
     margin-top: 5%; }
+    @media screen and (max-width: 770px) {
+      .team .team-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 15% 0; } }
+    @media screen and (max-width: 400px) {
+      .team .team-container {
+        width: 80%;
+        margin: 0 auto; } }
     .team .team-container #team {
       text-align: center;
       text-transform: uppercase;
@@ -354,47 +471,91 @@ header {
       margin-top: 3%;
       margin-bottom: 5%;
       padding: 2%; }
+      @media screen and (max-width: 770px) {
+        .team .team-container .tm-container {
+          width: 35em; } }
+      @media screen and (max-width: 400px) {
+        .team .team-container .tm-container {
+          width: 25em;
+          padding: 0; } }
       .team .team-container .tm-container img {
         width: 80%;
         padding-bottom: 5%; }
-      .team .team-container .tm-container .name {
+        @media screen and (max-width: 770px) {
+          .team .team-container .tm-container img {
+            float: left;
+            width: 28%;
+            padding-top: 5%; } }
+        @media screen and (max-width: 400px) {
+          .team .team-container .tm-container img {
+            clear: both;
+            width: 30%; } }
+      @media screen and (max-width: 770px) {
+        .team .team-container .tm-container .text-info {
+          float: right;
+          width: 65%; } }
+      @media screen and (max-width: 400px) {
+        .team .team-container .tm-container .text-info {
+          clear: both;
+          width: 90%;
+          margin: 0;
+          padding: 0; } }
+      .team .team-container .tm-container .text-info .name {
         text-align: left;
         font-size: 1.5em;
         color: #042B34;
         padding: 10% 0;
         padding-bottom: 5%;
         letter-spacing: 0.05em; }
-      .team .team-container .tm-container .position {
+      .team .team-container .tm-container .text-info .position {
         color: #66CCCC;
         padding-bottom: 5%;
         font-weight: bold; }
-      .team .team-container .tm-container .description {
+      .team .team-container .tm-container .text-info .description {
         line-height: 2em;
         color: rgba(0, 0, 0, 0.5); }
-      .team .team-container .tm-container .prev {
+      .team .team-container .tm-container .text-info .prev {
         padding-top: 5%;
         padding-bottom: 5%;
         color: #042B34;
         font-weight: bold; }
-      .team .team-container .tm-container ul {
+      .team .team-container .tm-container .text-info ul {
         padding-bottom: 5%; }
-        .team .team-container .tm-container ul li {
+        .team .team-container .tm-container .text-info ul li {
           padding-bottom: 1.15em;
           line-height: 1.1em;
           color: rgba(0, 0, 0, 0.5); }
-      .team .team-container .tm-container a {
+          @media screen and (max-width: 770px) {
+            .team .team-container .tm-container .text-info ul li {
+              line-height: 1.2em; } }
+      .team .team-container .tm-container .text-info a {
         color: #66CCCC;
         text-decoration: none;
         padding-right: 20%; }
+        @media screen and (max-width: 770px) {
+          .team .team-container .tm-container .text-info a {
+            clear: both;
+            display: inline-block;
+            color: #66CCCC; } }
+        @media screen and (max-width: 400px) {
+          .team .team-container .tm-container .text-info a {
+            clear: both; } }
 
 .email {
   background: #FCF8F3;
   padding: 8em; }
+  @media screen and (max-width: 770px) {
+    .email {
+      padding: 10em 0; } }
   .email .text-container {
     font-family: Main Font Bold;
     color: #66CCCC;
     font-size: 1.8em;
     line-height: 1.5em; }
+    @media screen and (max-width: 770px) {
+      .email .text-container {
+        width: 20em;
+        margin: 0 auto; } }
     .email .text-container #email {
       color: #042B34; }
 
@@ -406,27 +567,19 @@ footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5% 5%; }
+  @media screen and (max-width: 770px) {
+    footer {
+      padding: 15% 10%; } }
   footer .info {
     font-family: Main Font;
     color: white;
-    line-height: 1.05em;
+    line-height: 1.5em;
     padding-left: 100px;
     width: 15em;
     letter-spacing: 0.0025em;
-    font-size: 1.05em; }
-    @media screen and (max-width: 400px) {
-      footer .info {
-        position: static;
-        width: 80%; } }
-    @media screen and (max-width: 770px) {
-      footer .info {
-        width: 50%;
-        padding-right: 10%; } }
+    font-size: 1.05em;
+    text-align: left; }
   footer img {
     float: left; }
-    @media screen and (max-width: 400px) {
-      footer img {
-        position: static;
-        padding-bottom: 10%; } }
 
 /*# sourceMappingURL=styles.css.map */

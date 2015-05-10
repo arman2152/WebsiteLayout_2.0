@@ -6,6 +6,15 @@
 		width: 75%
 		margin: 8% auto
 		margin-top: 5%
+
+		@media screen and (max-width: 770px)
+			width: 90%
+			margin: 0 auto
+			padding: 15% 0
+
+		@media screen and (max-width: 400px)
+			width: 80%
+			margin: 0 auto
 		
 		#team
 			text-align: center
@@ -24,46 +33,83 @@
 			margin-bottom: 5%
 			padding: 2%
 
+			@media screen and (max-width: 770px)
+				width: 35em
+
+			@media screen and (max-width: 400px)
+				width: 25em
+				padding: 0
+
 			img
 				width: 80%
 				padding-bottom: 5%
 
+				@media screen and (max-width: 770px)
+					float: left
+					width: 28%
+					padding-top: 5%
+
+				@media screen and (max-width: 400px)
+					clear: both
+					width: 30%
+
 			.text-info
 				// letter-spacing: 0.05em
+
+				@media screen and (max-width: 770px)
+					float: right
+					width: 65%
+				@media screen and (max-width: 400px)
+					clear: both
+					width: 90%
+					margin: 0
+					padding: 0
 			
-			.name
-				text-align: left
-				font-size: 1.5em
-				color: $dark-blue
-				padding: 10% 0
-				padding-bottom: 5%
-				letter-spacing: 0.05em
+				.name
+					text-align: left
+					font-size: 1.5em
+					color: $dark-blue
+					padding: 10% 0
+					padding-bottom: 5%
+					letter-spacing: 0.05em
 
-			.position
-				color: $light-blue
-				padding-bottom: 5%
-				font-weight: bold
+				.position
+					color: $light-blue
+					padding-bottom: 5%
+					font-weight: bold
 
-			.description
-				line-height: 2em
-				color: rgba(0,0,0,0.5)
-
-			.prev
-				padding-top: 5%
-				padding-bottom: 5%
-				color: $dark-blue
-				font-weight: bold
-
-
-			ul 
-				padding-bottom: 5%
-
-				li
-					padding-bottom: 1.15em
-					line-height: 1.1em
+				.description
+					line-height: 2em
 					color: rgba(0,0,0,0.5)
 
-			a
-				color: $light-blue
-				text-decoration: none
-				padding-right: 20%
+				.prev
+					padding-top: 5%
+					padding-bottom: 5%
+					color: $dark-blue
+					font-weight: bold
+
+
+				ul 
+					padding-bottom: 5%
+
+					li
+						padding-bottom: 1.15em
+						line-height: 1.1em
+						color: rgba(0,0,0,0.5)
+
+						@media screen and (max-width: 770px)
+							line-height: 1.2em
+
+
+				a
+					color: $light-blue
+					text-decoration: none
+					padding-right: 20%
+
+					@media screen and (max-width: 770px)
+						clear: both
+						display: inline-block
+						color: $light-blue
+
+					@media screen and (max-width: 400px)
+						clear: both

@@ -6,6 +6,12 @@
 		margin: 100px auto
 		font-family: $main-font
 
+		@media screen and (max-width: 770px)
+			width: 85%
+
+		@media screen and (max-width: 400px)
+			border: none
+
 		.project-hidden
 			display: none
 
@@ -13,14 +19,33 @@
 			width: 100%
 			padding-bottom: 5%
 
+			@media screen and (max-width: 400px)
+				padding-bottom: 25%
+
 			.picture
 				float: left
 				width: 20%
 				text-align: center
 
+				@media screen and (max-width: 770px)
+					width: 35%
+
+				@media screen and (max-width: 400px)
+					clear: both
+					width: 100%
+					text-align: left
+					padding-bottom: 15px
+
 			.project-info
 				float: right
 				width: 75%
+
+				@media screen and (max-width: 770px)
+					width: 65%
+
+				@media screen and (max-width: 400px)
+					clear: both
+					width: 100%
 
 				.project-name
 					font-size: 1.5em
@@ -29,11 +54,17 @@
 					padding-bottom: 1em
 					font-family: $main-font-bold
 
+					@media screen and (max-width: 770px)
+						line-height: 1.5em
+
 				.client-name
 					font-size: 1.5em
 					color: $light-black
 					padding-bottom: 1em
 					font-family: $main-font-bold
+
+					@media screen and (max-width: 770px)
+						line-height: 1.5em
 
 				.project-description
 					float: left
@@ -43,6 +74,9 @@
 					padding-bottom: 1em
 					padding-right: 5%
 
+					@media screen and (max-width: 770px)
+						width: 100%
+
 					.read-more
 						display: none
 
@@ -51,6 +85,9 @@
 					width: 33%
 					line-height: 2em
 					color: $light-black
+
+					@media screen and (max-width: 770px)
+						display: none
 
 					h5
 						color: $light-blue
@@ -63,18 +100,31 @@
 				clear: both
 				padding-left: 25%
 
+				@media screen and (max-width: 770px)
+					padding-left: 40%
+
+				@media screen and (max-width: 400px)
+					padding: 0
+
 				a
 					color: $light-blue
 					padding-right: 3em
 
 
-	.see-more
-		-webkit-box-sizing: border-box
-		-moz-box-sizing: border-box 
-		box-sizing: border-box
+	.see-more 
+		display: block
+		margin: 40px auto
+		width: 18%
 		color: $light-blue
 		font-family: $main-font-bold
 		border: 2px solid $light-blue
 		border-radius: 2px
-		padding: 10px 50px
+		padding: 20px 10px
 		text-align: center
+
+		@media screen and (max-width: 770px)
+			padding: 20px 30px
+
+		@media screen and (max-width: 400px)
+			width: 30%
+			padding: 15px 30px

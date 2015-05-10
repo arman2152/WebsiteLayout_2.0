@@ -1,2 +1,4 @@
 # WebsiteLayout_2.0
-Updated version
+Modified version of the previous layout.
+
+More clear markup. Less lines of code.

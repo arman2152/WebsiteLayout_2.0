@@ -60,6 +60,9 @@ body
 	margin: 0 auto
 	text-align: center
 
+	@media screen and (max-width: 770px)
+		width: 100%
+
 a
 	text-decoration: none
 
@@ -72,10 +75,23 @@ a
 	font-family: $main-font
 	padding: 100px 0
 
+	@media screen and (max-width: 400px)
+		padding: 50px 0
+
 .text-container
 	width: 26em
 	text-align: center
 	margin: 0 auto
+
+	@media screen and (max-width: 770px)
+		width: 18em
+		margin: 0 auto
+		text-align: center
+
+	@media screen and (max-width: 400px)
+		width: 14em
+		font-size: 0.65em
+		line-height: 1.5em
 
 .section-title
 	text-transform: uppercase

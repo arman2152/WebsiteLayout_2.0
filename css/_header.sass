@@ -17,10 +17,16 @@ header
 		width: 19em
 		font-family: $main-font
 
+		@media screen and (max-width: 770px)
+			width: 20em
+
 		h1
 			font-size: 4em
 			padding-bottom: 20px
 			color: $dark-blue
+
+			@media screen and (max-width: 400px)
+				font-size: 3em
 
 		p
 			font-size: 1.5em
@@ -28,6 +34,10 @@ header
 			color: $light-black
 			line-height: 1.5em
 
+			@media screen and (max-width: 400px)
+				font-size: 1.3em
+				line-height: 1.3em
+
 		a
-			display: block
+			font-family: $main-font-bold
 			color: $light-blue
