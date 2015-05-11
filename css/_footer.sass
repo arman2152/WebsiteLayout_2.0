@@ -10,15 +10,24 @@ footer
 	@media screen and (max-width: 770px)
 		padding: 15% 10%
 
-	.info
-		font-family: $main-font
-		color: white
-		line-height: 1.5em
-		padding-left: 100px
-		width: 15em
-		letter-spacing: 0.0025em
-		font-size: 1.05em
-		text-align: left
+	@media screen and (max-width: 400px)
+		padding: 10% 10%
 
-	img
-		float: left
+.info
+	font-family: $main-font
+	color: white
+	line-height: 1.5em
+	padding-left: 100px
+	width: 15em
+	letter-spacing: 0.0025em
+	font-size: 1.05em
+	text-align: left
+
+	@media screen and (max-width: 400px)
+		font-size: 0.8em
+
+.footer-logo
+	float: left
+
+	@media screen and (max-width: 400px)
+		clear: left

@@ -5,60 +5,63 @@
 	color: white
 	font-family: $main-font
 
-	.wrap
-		width: 80%
+.wrap
+	width: 80%
+	margin: 0 auto
+	padding: 5% 0
+
+	@media screen and (max-width: 770px)
+		width: 90%
+		padding-top: 6em
+
+	@media screen and (max-width: 400px)
+		width: 90%
 		margin: 0 auto
-		padding: 5% 0
 
-		@media screen and (max-width: 770px)
-			width: 90%
-			padding-top: 6em
+.item
+	width: 17.58%
+	display: inline-block
+	text-align: center
+	margin: 0 75px
 
-		@media screen and (max-width: 400px)
-			width: 90%
+	@media screen and (max-width: 770px)
+		width: 26em
+		margin: 0 auto
+		padding-bottom: 3em
+
+	@media screen and (max-width: 400px)
+		width: 80% 
+		margin: 0 auto
+
+	&:last-child
+		p
+			width: 75%
 			margin: 0 auto
-
-		.item
-			width: 17.58%
-			display: inline-block
-			text-align: center
-			margin: 0 75px
 
 			@media screen and (max-width: 770px)
 				width: 26em
-				margin: 0 auto
-				padding-bottom: 3em
 
 			@media screen and (max-width: 400px)
-				width: 80% 
-				margin: 0 auto
+				width: 15em
 
-			&:last-child
-				p
-					width: 75%
-					margin: 0 auto
+.pic
+	border: 1px solid white
+	width: 100%
+	height: 170px
+	margin-bottom: 25px
 
-					@media screen and (max-width: 770px)
-						width: 26em
-
-			.pic
-				border: 1px solid white
-				width: 100%
-				height: 170px
-				margin-bottom: 25px
-
-				@media screen and (max-width: 770px)
-					width: 50%
-					margin: 0 auto
+	@media screen and (max-width: 770px)
+		width: 50%
+		margin: 0 auto
 
 
-			h3
-				margin-bottom: 25px
+.values-title
+	margin-bottom: 25px
 
-				@media screen and (max-width: 770px)
-					font-size: 1.5em
-					padding-top: 20px
+	@media screen and (max-width: 770px)
+		font-size: 1.5em
+		padding-top: 20px
 
-			p
-				line-height: 1.5em
-				letter-spacing: 0.025em
+.values-content
+	line-height: 1.5em
+	letter-spacing: 0.025em
